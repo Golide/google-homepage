@@ -1,0 +1,230 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+ *    v2.0 | 20110126
+ *       License: none (public domain)
+ *       */
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background: #fff;
+    font: inherit;
+    vertical-align: baseline;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+#main-nav {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    margin: auto;
+    line-height: 24px;
+    padding: 16px 20px 0 0;
+}
+
+.nav-links {
+    color: rgba(0,0,0,0.87);
+    text-decoration: none;
+}
+
+ul, li {
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links img {
+    display: block;
+    font-size: 1.33em;
+    color: #000;
+    opacity: 0.55;
+}
+
+.main-nav-wrapper {
+    margin: auto 9px;
+}
+
+#sign-in {
+    color: #fff;
+    display: block;
+    background-color: #4285f4;
+    line-height: 28px;
+    padding: 0 12px;
+    border: 1px solid #4285f4;
+    font-weight: bold;
+    outline: none;
+    border-radius: 3px;
+} 
+
+.main-logo {
+    display: flex;
+    justify-content: center;
+    padding-top: 109px;
+} 
+
+.form-container {
+    display: flex;
+    background: #fff;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    height: 44px;
+    margin: 28px auto 0;
+    width: 584px;
+    justify-content: space-between;
+}
+
+.form-container:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-wrapper, .input-wrapper, .mic-wrapper {
+    margin: auto 0;
+    border-radius: 24px;
+}
+
+.input-wrapper {
+    flex-basis: 600px;
+}
+
+#search {
+    margin: auto 14px;
+    display: block;
+    height: 20px;
+    width: 20px;
+    color: #000;
+    opacity: 0.35;
+}
+
+#input {
+    width: 100%; 
+    border: #fff;
+    height: 2em;
+} 
+
+input[type="text"] {
+    color: #222;
+    font-size:16px;
+}
+
+#input:focus {
+    outline: none;
+}
+
+#mic {
+    margin: auto 20px;
+    display: block;
+    height: 20px;
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+
+.google-search-wrapper {
+    margin-right: 3px;
+}
+
+.feeling-lucky {
+    margin-left: 3px;
+}
+
+.search-buttons button {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+} 
+
+#footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    line-height: 24px;
+    border-top: 1px solid #e4e4e4;
+    background-color: #f2f2f2;
+}
+
+.left {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 15px;
+    background-color: #f2f2f2;
+}
+
+.right {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 15px;
+    background-color: #f2f2f2;
+}
+
+.footer-text {
+    display: block;
+    padding: 8px 13px;
+    color: #5f6368;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    text-decoration: none;
+}
+
+.footer-text:hover {
+    text-decoration: underline;
+}
