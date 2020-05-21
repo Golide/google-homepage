@@ -32,6 +32,9 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
     line-height: 1;
+    position: relative;
+    height: 100%;
+    width: 100%;
 }
 ol, ul {
     list-style: none;
@@ -55,7 +58,7 @@ table {
     list-style-type: none;
     margin: auto;
     line-height: 24px;
-    padding: 16px 20px 0 0;
+    padding: 16px 0 0 0;
 }
 
 .nav-links {
@@ -78,6 +81,7 @@ ul, li {
 
 .main-nav-wrapper {
     margin: auto 9px;
+    height: 100%;
 }
 
 #sign-in {
@@ -105,7 +109,7 @@ ul, li {
     border-radius: 24px;
     height: 44px;
     margin: 28px auto 0;
-    width: 584px;
+    width: 60%;
     justify-content: space-between;
 }
 
@@ -154,17 +158,19 @@ input[type="text"] {
 }
 
 .search-buttons {
-    display: flex;
+    display: block;
     justify-content: center;
     margin: 20px;
+    position: relative;
+    text-align: center;
 }
 
 .google-search-wrapper {
-    margin-right: 3px;
+    display: inline-block;
 }
 
 .feeling-lucky {
-    margin-left: 3px;
+    display: inline-block;
 }
 
 .search-buttons button {
@@ -192,14 +198,15 @@ input[type="text"] {
 } 
 
 #footer {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    position: absolute;
+    display: flex;
+    position: fixed;
     bottom: 0;
     width: 100%;
     line-height: 24px;
     border-top: 1px solid #e4e4e4;
     background-color: #f2f2f2;
+    white-space: nowrap;
+    justify-content: space-between;
 }
 
 .left {
